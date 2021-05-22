@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Project78-FamilyBook</title>
+
+</head>
+<body>
+    <center>
+        <h1>Family Book</h1>
+        <div>
+            <img src="0b375fb169569a6100a18ecb7d584d0c.jpg" id="image1" style="width: 200px;">
+            <h4 id="name1">DAD</h4>
+            <button onclick="update()" style="width: 100px; height: 30px;" >NEXT</button>
+        </div>
+    </center>
+    <script>
+        var images= ["0b375fb169569a6100a18ecb7d584d0c.jpg", "56958987-lifestyle-portrait-mom-and-mother-portrait-happiness-meadow-mother-portrait-vector-illustration-and-.jpg", "22cddf308cbb3958b6d2610398f47401.jpg", "gfgggy0kkfy51.png"];
+        console.log(images);
+        var names= ["Dad", "Mom", "Niki", "Tommy"];
+        console.log(names);
+        
+        var i=0;
+        function update() {
+            i++;
+            var numberofpeople= 3;
+            if(i>numberofpeople) {
+                i=0;
+            }
+            var updatedimg= images[i];
+            var updatedname= names[i];
+            document.getElementById("image1").src= updatedimg; 
+            document.getElementById("name1").innerHTML= updatedname;
+
+        }
+
+
+
+
+    </script>
+    
+
+
+
+</body>
+
+
+
+
+
+</html>
